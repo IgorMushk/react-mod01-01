@@ -5,6 +5,8 @@ import ReactDOM from "react-dom/client"; // vewr.18
 
 // //  in JS
 // const div = document.createElement("div");
+//div.id = 'somw-ID';
+//div.classList = 'test-class';
 
 //const root = document.getElementById("root"); // JS & React
 // //console.log(root);
@@ -12,7 +14,7 @@ import ReactDOM from "react-dom/client"; // vewr.18
 // //
 
 // in React
-const div = React.createElement("div");
+const div = React.createElement("div", { name: "main", id: "test-Id", className: "test-class" }, "Hello");
 
 console.log("div :>> ", div);
 
