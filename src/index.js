@@ -17,7 +17,9 @@ import ReactDOM from "react-dom/client"; // vewr.18
 // root.append(div);
 // //
 
-const paragraph = React.createElement("p", { id: "test-P-Id", children: ["I am P"] });
+//const paragraph = React.createElement("p", { id: "test-P-Id", children: ["I am P"] });
+
+const p = <p id="test=Id">I am P</p>;
 
 // in React
 // const div = React.createElement(
@@ -28,13 +30,21 @@ const paragraph = React.createElement("p", { id: "test-P-Id", children: ["I am P
 //   "from",
 //   "UK"
 // );
-const div = React.createElement("div", {
-  name: "main",
-  id: "test-Id",
-  className: "test-class",
-  //children: ["Hello", " ", "React ", "from", " UK"],
-  children: paragraph,
-});
+
+// const div = React.createElement("div", {
+//   name: "main",
+//   id: "test-Id",
+//   className: "test-class",
+//   //children: ["Hello", " ", "React ", "from", " UK"],
+//   //children: paragraph,
+//   children: p,
+// });
+
+const div = (
+  <div name="main" id="test-Id" className="test-class">
+    {p}
+  </div>
+);
 
 console.log("div :>> ", div);
 
