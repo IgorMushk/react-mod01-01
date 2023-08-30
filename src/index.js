@@ -49,7 +49,7 @@ import data from "./data.json";
 //-console.log("div :>> ", div);
 
 // fom Bootstap (https://getbootstrap.com/docs/5.3/components/card/)
-const card = () => {
+const Card = () => {
   return data.map((photo) => {
     return (
       <div key={photo.id} className="card mx-auto my-2" style={{ width: "18rem" }}>
@@ -71,7 +71,7 @@ const card = () => {
 
 //ReactDOM.render(div, root); // ver.17
 //ReactDOM.createRoot(root).render(div); // ver/18
-ReactDOM.createRoot(document.getElementById("root")).render(card()); // ver/18
+ReactDOM.createRoot(document.getElementById("root")).render(<Card />); // ver/18
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<React.StrictMode></React.StrictMode>);
