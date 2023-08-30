@@ -1,5 +1,5 @@
-import data from "../data.json";
-import { Head } from "./Head";
+import data from "../../data.json";
+import { Head } from "../Head/Head";
 
 export const Card = () => {
   return data.map((photo) => {
