@@ -2,7 +2,8 @@ import React from "react";
 //import ReactDOM from "react-dom"; // ver.17
 import ReactDOM from "react-dom/client"; // vewr.18
 // import "./index.css";
-import data from "./data.json";
+//-import data from "./data.json";
+import { Card } from "./components/Card";
 
 // //  in JS
 // const div = document.createElement("div");
@@ -70,38 +71,38 @@ import data from "./data.json";
 //   );
 // };
 
-const Head = ({ clas, id }) => {
-  //console.log("props :>>", props);
-  return (
-    <p id={id} className={clas}>
-      I am Head
-    </p>
-  );
-};
+// const Head = ({ clas, id }) => {
+//   //console.log("props :>>", props);
+//   return (
+//     <p id={id} className={clas}>
+//       I am Head
+//     </p>
+//   );
+// };
 
 // fom Bootstap (https://getbootstrap.com/docs/5.3/components/card/)
-const Card = () => {
-  return data.map((photo) => {
-    return (
-      <div key={photo.id} className="card mx-auto my-2" style={{ width: "18rem" }}>
-        <img src={photo.url} className="card-img-top" alt={photo.title} />
-        <div className="card-body">
-          <h5 className="card-title">Card title: {photo.title}</h5>
-          {/* <p className="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
-          </p> */}
-          {/* {head()} */}
-          {/* {head("card-title", "id-123")} */}
-          {/* {head({ id: "id-123", clas: "card-title" })} */}
-          <Head id="id-123" clas="card-title" />
-          <a href="#" class="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
-      </div>
-    );
-  });
-};
+// const Card = () => {
+//   return data.map((photo) => {
+//     return (
+//       <div key={photo.id} className="card mx-auto my-2" style={{ width: "18rem" }}>
+//         <img src={photo.url} className="card-img-top" alt={photo.title} />
+//         <div className="card-body">
+//           <h5 className="card-title">Card title: {photo.title}</h5>
+//           {/* <p className="card-text">
+//             Some quick example text to build on the card title and make up the bulk of the card's content.
+//           </p> */}
+//           {/* {head()} */}
+//           {/* {head("card-title", "id-123")} */}
+//           {/* {head({ id: "id-123", clas: "card-title" })} */}
+//           <Head id="id-123" clas="card-title" />
+//           <a href="#" class="btn btn-primary">
+//             Go somewhere
+//           </a>
+//         </div>
+//       </div>
+//     );
+//   });
+// };
 //console.log("card :>>", card);
 
 //ReactDOM.render(div, root); // ver.17
