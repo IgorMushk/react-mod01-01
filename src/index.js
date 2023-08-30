@@ -48,8 +48,35 @@ import data from "./data.json";
 //- );
 //-console.log("div :>> ", div);
 
-const Head = () => {
-  return <p>I am Head</p>;
+// const Head = () => {
+//   return <p>I am Head</p>;
+// };
+
+// const head = (clas, id) => {
+//   console.log("clas :>>", clas);
+//   return (
+//     <p id={id} className={clas}>
+//       I am Head
+//     </p>
+//   );
+// };
+
+// const head = (obj) => {
+//   console.log("obj :>>", obj);
+//   return (
+//     <p id={obj.id} className={obj.clas}>
+//       I am Head
+//     </p>
+//   );
+// };
+
+const Head = (props) => {
+  //console.log("props :>>", props);
+  return (
+    <p id={props.id} className={props.clas}>
+      I am Head
+    </p>
+  );
 };
 
 // fom Bootstap (https://getbootstrap.com/docs/5.3/components/card/)
@@ -64,7 +91,9 @@ const Card = () => {
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </p> */}
           {/* {head()} */}
-          <Head />
+          {/* {head("card-title", "id-123")} */}
+          {/* {head({ id: "id-123", clas: "card-title" })} */}
+          <Head id="id-123" clas="card-title" />
           <a href="#" class="btn btn-primary">
             Go somewhere
           </a>
