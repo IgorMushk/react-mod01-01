@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client"; // vewr.18
 // import "./index.css";
 //-import data from "./data.json";
-import { Card } from "./components/Card";
+//-import { Card } from "./components/Card";
 
 // //  in JS
 // const div = document.createElement("div");
@@ -107,7 +107,8 @@ import { Card } from "./components/Card";
 
 //ReactDOM.render(div, root); // ver.17
 //ReactDOM.createRoot(root).render(div); // ver/18
-ReactDOM.createRoot(document.getElementById("root")).render(<Card />); // ver/18
+//ReactDOM.createRoot(document.getElementById("root")).render(<Card />); // ver/18
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<React.StrictMode></React.StrictMode>);
