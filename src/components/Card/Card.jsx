@@ -1,16 +1,11 @@
 import data from "../../data.json";
 import { Head } from "../Head/Head";
+import "./Card.css";
 
 export const Card = () => {
   return data.map((photo) => {
     return (
-      <div
-        key={photo.id}
-        style={{
-          backgroundColor: "black",
-          textDecoration: "underline",
-        }}
-      >
+      <div key={photo.id}>
         <img src={photo.url} alt={photo.title} />
         <div>
           <h5>Card title: {photo.title}</h5>

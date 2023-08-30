@@ -1,0 +1,23 @@
+div {
+  width: 300px;
+}
+
+img {
+  width: 300px;
+}
+
+.main {
+  width: 300px;
+}
+
+.main.blue {
+  background-color: blue;
+}
+
+.main.red {
+  background-color: red;
+}
+
+.photo {
+  width: 300px;
+}
