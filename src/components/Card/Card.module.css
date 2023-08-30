@@ -2,11 +2,11 @@
   width: 300px;
 }
 
-.blue {
+.main.blue {
   background-color: blue;
 }
 
-.red {
+.main.red {
   background-color: red;
 }
 
