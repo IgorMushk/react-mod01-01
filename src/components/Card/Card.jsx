@@ -14,7 +14,12 @@ export const Card = () => {
           {/* {head()} */}
           {/* {head("card-title", "id-123")} */}
           {/* {head({ id: "id-123", clas: "card-title" })} */}
-          <Head id="id-123" clas="card-title" />
+          {/* <Head id="id-123" clas="card-title" /> */}
+          <Head id="id-123" clas="card-title">
+            asdasd
+            <div>asdasd</div>
+            <p>asdasd</p>
+          </Head>
           <a href="#" class="btn btn-primary">
             Go somewhere
           </a>
