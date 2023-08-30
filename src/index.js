@@ -2,6 +2,7 @@ import React from "react";
 //import ReactDOM from "react-dom"; // ver.17
 import ReactDOM from "react-dom/client"; // vewr.18
 // import "./index.css";
+import data from "./data.json";
 
 // //  in JS
 // const div = document.createElement("div");
@@ -19,7 +20,7 @@ import ReactDOM from "react-dom/client"; // vewr.18
 
 //const paragraph = React.createElement("p", { id: "test-P-Id", children: ["I am P"] });
 
-const p = <p id="test=Id">I am P</p>;
+//-const p = <p id="test=Id">I am P</p>;
 
 // in React
 // const div = React.createElement(
@@ -40,17 +41,32 @@ const p = <p id="test=Id">I am P</p>;
 //   children: p,
 // });
 
-const div = (
-  <div name="main" id="test-Id" className="test-class">
-    {p}
+//- const div = (
+//-   <div name="main" id="test-Id" className="test-class">
+//-     {p}
+//-   </div>
+//- );
+//-console.log("div :>> ", div);
+
+// fom Bootstap (https://getbootstrap.com/docs/5.3/components/card/)
+const card = (
+  <div className="card mx-auto my-2" style={{ width: "18rem" }}>
+    <img src={data[0].url} className="card-img-top" alt={data[0].title} />
+    <div className="card-body">
+      <h5 className="card-title">Card title: {data[0].title}</h5>
+      <p className="card-text">
+        Some quick example text to build on the card title and make up the bulk of the card's content.
+      </p>
+      <a href="#" class="btn btn-primary">
+        Go somewhere
+      </a>
+    </div>
   </div>
 );
 
-console.log("div :>> ", div);
-
 //ReactDOM.render(div, root); // ver.17
 //ReactDOM.createRoot(root).render(div); // ver/18
-ReactDOM.createRoot(document.getElementById("root")).render(div); // ver/18
+ReactDOM.createRoot(document.getElementById("root")).render(card); // ver/18
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<React.StrictMode></React.StrictMode>);
