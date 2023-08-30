@@ -70,10 +70,10 @@ import data from "./data.json";
 //   );
 // };
 
-const Head = (props) => {
+const Head = ({ clas, id }) => {
   //console.log("props :>>", props);
   return (
-    <p id={props.id} className={props.clas}>
+    <p id={id} className={clas}>
       I am Head
     </p>
   );
