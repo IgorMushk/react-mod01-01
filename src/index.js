@@ -107,36 +107,37 @@ import { Card } from "./components/Card";
 
 //ReactDOM.render(div, root); // ver.17
 //ReactDOM.createRoot(root).render(div); // ver/18
-//////ReactDOM.createRoot(document.getElementById("root")).render(<Card />); // ver/18
+ReactDOM.createRoot(document.getElementById("root")).render(<Card />); // ver/18
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<React.StrictMode></React.StrictMode>);
 
-//// Пример из Модуля 1
-const favoriteBooks = [
-  { id: "id-1", name: "JS for beginners" },
-  { id: "id-2", name: "React basics" },
-  { id: "id-3", name: "React Router overview" },
-  { id: "id-4", name: "Redux in depth" },
-];
+///////////////////////////////////////////////////////////////////////////////////////
+//// Пример из Модуля 1 - Example from Module 1
+// const favoriteBooks = [
+//   { id: "id-1", name: "JS for beginners" },
+//   { id: "id-2", name: "React basics" },
+//   { id: "id-3", name: "React Router overview" },
+//   { id: "id-4", name: "Redux in depth" },
+// ];
 
-const BookList = ({ books }) => {
-  console.log(books);
-  return (
-    <ul>
-      {books.map((book) => (
-        <li>{book.name}</li>
-      ))}
-    </ul>
-  );
-};
+// const BookList = ({ books }) => {
+//   console.log(books);
+//   return (
+//     <ul>
+//       {books.map((book) => (
+//         <li key={book.id}>{book.name}</li>
+//       ))}
+//     </ul>
+//   );
+// };
 
-const App = () => {
-  return (
-    <div>
-      <BookList books={favoriteBooks} />
-    </div>
-  );
-};
+// const App = () => {
+//   return (
+//     <div>
+//       <BookList books={favoriteBooks} />
+//     </div>
+//   );
+// };
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<App />);
