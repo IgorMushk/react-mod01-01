@@ -6,3 +6,8 @@ const App = () => {
 };
 
 export default App;
+
+// снипы
+//rafc
+//rafce
+//rafcp

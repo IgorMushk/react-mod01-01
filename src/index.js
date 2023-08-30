@@ -1,6 +1,8 @@
 import React from "react";
 //import ReactDOM from "react-dom"; // ver.17
 import ReactDOM from "react-dom/client"; // vewr.18
+import App from "./components/App";
+
 // import "./index.css";
 //-import data from "./data.json";
 //-import { Card } from "./components/Card";

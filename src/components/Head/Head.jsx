@@ -1,5 +1,5 @@
 export const Head = ({ clas, id }) => {
-    return (
+  return (
     <p id={id} className={clas}>
       I am Head
     </p>
