@@ -49,27 +49,29 @@ import data from "./data.json";
 //-console.log("div :>> ", div);
 
 // fom Bootstap (https://getbootstrap.com/docs/5.3/components/card/)
-const card = data.map((photo) => {
-  return (
-    <div key={photo.id} className="card mx-auto my-2" style={{ width: "18rem" }}>
-      <img src={photo.url} className="card-img-top" alt={photo.title} />
-      <div className="card-body">
-        <h5 className="card-title">Card title: {photo.title}</h5>
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">
-          Go somewhere
-        </a>
+const card = () => {
+  return data.map((photo) => {
+    return (
+      <div key={photo.id} className="card mx-auto my-2" style={{ width: "18rem" }}>
+        <img src={photo.url} className="card-img-top" alt={photo.title} />
+        <div className="card-body">
+          <h5 className="card-title">Card title: {photo.title}</h5>
+          <p className="card-text">
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">
+            Go somewhere
+          </a>
+        </div>
       </div>
-    </div>
-  );
-});
+    );
+  });
+};
 //console.log("card :>>", card);
 
 //ReactDOM.render(div, root); // ver.17
 //ReactDOM.createRoot(root).render(div); // ver/18
-ReactDOM.createRoot(document.getElementById("root")).render(card); // ver/18
+ReactDOM.createRoot(document.getElementById("root")).render(card()); // ver/18
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<React.StrictMode></React.StrictMode>);
