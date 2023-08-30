@@ -11,7 +11,8 @@ export const Card = ({ isOnline }) => {
       <div
         key={photo.id}
         // className={isOnline ? `${css.main} ${css.red}` : `${css.main} ${css.blue}`}
-        className={clsx(css.main, isOnline && css.red, !isOnline && css.blue)}
+        // className={clsx(css.main, isOnline && css.red, !isOnline && css.blue)}
+        className={clsx(css.main, { [css.red]: isOnline })}
       >
         <img src={photo.url} alt={photo.title} className={css.photo} />
         <div>
