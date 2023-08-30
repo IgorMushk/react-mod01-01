@@ -7,7 +7,9 @@ const App = () => {
 
 export default App;
 
-// снипы
+// snippets
 //rafc
 //rafce
 //rafcp
+// console.log()
+// clo clg
