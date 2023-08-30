@@ -5,14 +5,15 @@ import clsx from "clsx";
 
 import css from "./Card.module.css";
 
-export const Card = ({ isOnline }) => {
+export const Card = ({ isOnline, isOffline }) => {
   return data.map((photo) => {
     return (
       <div
         key={photo.id}
         // className={isOnline ? `${css.main} ${css.red}` : `${css.main} ${css.blue}`}
         // className={clsx(css.main, isOnline && css.red, !isOnline && css.blue)}
-        className={clsx(css.main, { [css.red]: isOnline })}
+        // className={clsx(css.main, isOnline ? css.red : css.blue)}
+        // className={clsx(css.main, { [css.red]: isOnline, [css.blue]: isOffline })}
       >
         <img src={photo.url} alt={photo.title} className={css.photo} />
         <div>
@@ -28,6 +29,32 @@ export const Card = ({ isOnline }) => {
     );
   });
 };
+
+//////////////////////////////////////////////////////////////////////////////
+// export const Card = ({ isOnline, isOffline }) => {
+//   return data.map((photo) => {
+//     return (
+//       <div
+//         key={photo.id}
+//         // className={isOnline ? `${css.main} ${css.red}` : `${css.main} ${css.blue}`}
+//         // className={clsx(css.main, isOnline && css.red, !isOnline && css.blue)}
+//         // className={clsx(css.main, isOnline ? css.red : css.blue)}
+//         // className={clsx(css.main, { [css.red]: isOnline, [css.blue]: isOffline })}
+//       >
+//         <img src={photo.url} alt={photo.title} className={css.photo} />
+//         <div>
+//           <h5>Card title: {photo.title}</h5>
+//           <Head id="id-123" clas="card-title">
+//             asdasd
+//             <div>asdasd</div>
+//             <p>asdasd</p>
+//           </Head>
+//           <a href="#">Go somewhere</a>
+//         </div>
+//       </div>
+//     );
+//   });
+// };
 
 // --- bootstrap
 // export const Card = () => {

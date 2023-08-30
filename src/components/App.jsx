@@ -2,7 +2,7 @@
 import { Card } from "./Card/Card";
 
 const App = () => {
-  return <Card isOnline />;
+  return <Card isOnline />; //isOffline isOnline
 };
 
 export default App;
