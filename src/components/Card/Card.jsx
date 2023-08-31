@@ -22,6 +22,7 @@ export const Card = ({ isOnline, isOffline }) => {
     return (
       <Container key={photo.id} isHide={isOnline}>
         <Photo src={photo.url} alt={photo.title} />
+        <h5>Card title: {photo.title}</h5>
         <div>
           <h5>Card title: {photo.title}</h5>
           <Head id="id-123" clas="card-title">
